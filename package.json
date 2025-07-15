@@ -1,0 +1,53 @@
+{
+    "name": "template-react-ts",
+    "description": "A Phaser 3 TypeScript project template that demonstrates React communication and uses Vite for bundling.",
+    "version": "1.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/phaserjs/template-react-ts.git"
+    },
+    "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
+    "license": "MIT",
+    "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+    "bugs": {
+        "url": "https://github.com/phaserjs/template-react-ts/issues"
+    },
+    "homepage": "https://github.com/phaserjs/template-react-ts#readme",
+    "keywords": [
+        "phaser",
+        "phaser3",
+        "react",
+        "vite",
+        "typescript"
+    ],
+    "scripts": {
+        "dev": "vite --config vite/config.dev.mjs --host",
+        "build": "vite build --config vite/config.prod.mjs",
+        "watch": "npm-run-all  --parallel dev watch:build ",
+        "watch:build": "nodemon --watch src --ext js,jsx,ts,tsx,css,scss,html --exec \"npm run build\""
+    },
+    "dependencies": {
+        "@playe/phaser-3": "^0.0.32",
+        "lottie-web": "^5.12.2",
+        "phaser": "^3.87.0",
+        "phaser3-rex-plugins": "^1.80.12",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "webfontloader": "^1.6.28"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.12",
+        "@types/react-dom": "^18.3.1",
+        "@typescript-eslint/eslint-plugin": "^8.17.0",
+        "@typescript-eslint/parser": "^8.17.0",
+        "@vitejs/plugin-react": "^4.3.4",
+        "eslint": "^9.16.0",
+        "eslint-plugin-react-hooks": "^5.0.0",
+        "eslint-plugin-react-refresh": "^0.4.16",
+        "nodemon": "^3.1.7",
+        "npm-run-all": "^4.1.5",
+        "terser": "^5.36.0",
+        "typescript": "^5.7.2",
+        "vite": "^6.0.2"
+    }
+}
